@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Container, Grid, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
-import profile from "../../assets/images/imga1.jpg";
+import profile from "../../assets/images/imga1.png";
 
 const Hero = () => {
     const theme = useTheme();
@@ -41,7 +41,6 @@ const Hero = () => {
                                     sx={{
                                         width: "100%",
                                         maxWidth: "350px",
-                                        borderRadius: "50%",
                                         boxShadow: "0px 8px 30px rgba(0,0,0,0.2)",
                                         transition: "transform 0.5s",
                                         "&:hover": {
@@ -57,8 +56,7 @@ const Hero = () => {
                                         left: "50%",
                                         transform: "translate(-50%, -50%)",
                                         width: "100%",
-                                        height: "100%",
-                                        borderRadius: "50%",
+                                        height: "50%",
                                         background: `radial-gradient(circle, ${theme.palette.primary.main}20, transparent 70%)`,
                                         zIndex: -1,
                                     }}

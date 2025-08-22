@@ -16,7 +16,6 @@ import { motion } from "framer-motion";
 import {
   FaGithub,
   FaLinkedin,
-  FaBehance,
   FaFacebook,
   FaWhatsapp,
 } from "react-icons/fa";
