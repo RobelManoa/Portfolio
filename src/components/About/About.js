@@ -7,8 +7,6 @@ import {
   Card,
   CardContent,
   Avatar,
-  LinearProgress,
-  Tooltip,
   Chip,
   useTheme,
   useMediaQuery,
@@ -75,14 +73,12 @@ const variants = {
   hoverLift: { whileHover: { y: -4, transition: { type: "spring", stiffness: 300 } } },
 };
 
-const groupBy = (arr, key) =>
-  arr.reduce((acc, item) => ((acc[item[key]] = acc[item[key]] || []).push(item), acc), {});
+// const groupBy = (arr, key) =>
+//   arr.reduce((acc, item) => ((acc[item[key]] = acc[item[key]] || []).push(item), acc), {});
 
 const About = () => {
   const theme = useTheme();
   const downMd = useMediaQuery(theme.breakpoints.down("md"));
-  const skillsByCat = groupBy(skills, "cat");
-
   return (
     <Box
       id="about"
